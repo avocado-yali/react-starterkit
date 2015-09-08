@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-class Header extends React.Component{
+class Footer extends React.Component{
 
   constructor(props, context) {
    super(props);
@@ -9,28 +9,25 @@ class Header extends React.Component{
 
   render() {
     return (
-      <header className="clearfix">
+      <footer className="clearfix footer">
         Application Name
 
         <nav className="clearfix">
           <div className="nav-item">
-            <Link to="home">Home</Link>
+            <Link to="home">foot link 1</Link>
           </div>
           <div className="nav-item">
-            <Link to="info">Info</Link>
-          </div>
-          <div className="nav-item">
-            <Link to="login">Login</Link>
+            <Link to="info">foot link 2</Link>
           </div>
         </nav>
-      </header>
+      </footer>
     );
   }
 
 }
 
-Header.contextTypes = {
+Footer.contextTypes = {
   router: React.PropTypes.func.isRequired
 }
 
-export default Header;
+export default Footer;

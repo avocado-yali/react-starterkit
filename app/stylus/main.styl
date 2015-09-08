@@ -1,3 +1,4 @@
+
 @import 'normalize'
 @import 'helper'
 
@@ -23,15 +24,22 @@ a:visited
 a:hover
   color: lighten($linkColor,10%)
   
+html
+  position: relative
+  min-height: 100%
+  
 body
   color: $black
   font-size: 1em
   line-height: 1.5
+  margin-bottom: 60px
+  
   
 header
   background: $grey
   color:$black
   padding: 1em
+  position: relative;
   
   nav
     float:right
@@ -46,3 +54,11 @@ header
     
 .content
   padding: 1em
+  
+.footer
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
